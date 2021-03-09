@@ -1,0 +1,187 @@
+*{
+    font-family:'Karla', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+body{
+    background-color: hsl(204, 43%, 93%);
+}
+/*Card*/
+.card{
+    -webkit-box-shadow: 0px 10px 28px 0px rgba(50, 50, 50, 0.41);
+    -moz-box-shadow:    0px 10px 28px 0px rgba(50, 50, 50, 0.41);
+    box-shadow:         0px 10px 28px 0px rgba(50, 50, 50, 0.41);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    width: 650px;
+    height: 50vh;
+
+    margin: 20vh auto;
+    border: border-box ;
+    border-radius: 25px;
+
+    
+}
+/*Join*/
+.join{
+    grid-column: 1/3;
+    background-color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.join-content, .sub-content, .why-content{
+    margin: 40px 0px 0px 40px;
+}
+.join-content > h1{
+    font-size: 1.8rem;
+    font-weight: 700;
+
+    color: hsl(179, 62%, 43%);
+
+    margin-bottom: 30px;
+}
+.join-content > h2{
+    font-size: 1.2rem;
+
+    color: hsl(71, 73%, 54%);
+
+    margin-bottom: 15px;
+}
+.join-content > p{
+    color: hsl(218, 22%, 67%);
+    line-height: 1.5;
+}
+/*sub*/
+.sub{
+    background-color: hsl(179, 62%, 43%);
+    border-bottom-left-radius: 5px;
+}
+.sub-content > div > h3, .why-content > h3{
+    font-size: 1.2rem;
+    font-weight: 700;
+
+    color: rgb(235, 235, 235);
+
+    margin-bottom: 20px;
+}
+.sub-content > div > .preco{
+    display: flex;
+    align-items: center;
+
+    font-size: 0.9rem;
+
+    color: hsl(179, 61%, 49%);
+
+    margin-bottom: 15px;
+}
+.sub-content > div > .preco > :first-child{
+    font-size: 2rem;
+    font-weight: 700;
+
+    color: white;
+
+    margin-right: 15px;
+}
+.sub-content > div > .sub-txt{
+    color: rgb(235, 235, 235);
+    margin-bottom: 35px;
+}
+.sub-content > a{
+    text-decoration: none;
+    color: rgb(43, 144, 184);
+
+    padding: 10px 87px;
+    background-color: hsl(71, 73%, 54%);
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 5px 20px 0px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow:    0px 5px 20px 0px rgba(50, 50, 50, 0.5);
+    box-shadow:         0px 5px 20px 0px rgba(50, 50, 50, 0.5);
+    transition: box-shadow  .3s linear;
+}
+.sub-content > a:hover{
+    -webkit-box-shadow: 0px 5px 20px 0px rgba(50, 50, 50, 0.29);
+    -moz-box-shadow:    0px 5px 20px 0px rgba(50, 50, 50, 0.29);
+    box-shadow:         0px 5px 20px 0px rgba(50, 50, 50, 0.29);
+}
+/*sub*/
+.why{
+    background-color: hsl(179, 60%, 47%);
+    border-bottom-right-radius: 5px;
+}
+.why-content > p{
+    color: hsl(179, 78%, 82%);
+    font-size: 0.9rem;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 700px){
+    .card{
+        width: 90vw;
+        height: 50vh;
+
+        display: flex;
+        flex-direction: column;
+
+        margin: 2vh auto;
+    }
+    .join-content, .sub-content, .why-content{
+        margin: 40px 40px 40px 40px;
+    }
+    .join-content > h2{
+        font-size: 1.2rem;
+    
+        margin-bottom: 30px;
+    }
+    .sub{
+        background-color: hsl(179, 62%, 43%);
+        border-bottom-left-radius: 0px;
+    }
+    .sub-content{
+        display: flex;
+        flex-direction: column;
+        align-items:baseline;
+    }
+    .sub-content > div > .preco > :first-child{
+        font-size: 3rem;
+        font-weight: 700;
+    
+        color: white;
+    
+        margin-right: 10px;
+    }
+    .sub-content > div > .preco{
+        display: flex;
+        align-items: center;
+    
+        font-size: 1rem;
+    
+        color: hsl(179, 61%, 49%);
+    
+        margin-bottom: 15px;
+    }
+    .sub-content > div > .sub-txt{
+        font-size: 1.1rem;
+        margin-bottom: 30px;
+    }
+    .sub-content > a{
+        text-decoration: none;
+        font-weight: 700;
+        padding: 20px 43%;
+    }
+    .why{
+
+        margin-bottom: 10px;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+    .why-content > p{
+        color: hsl(179, 78%, 82%);
+        font-size: 0.9rem;
+        line-height: 1.3;
+    }
+    
+}
