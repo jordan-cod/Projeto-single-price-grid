@@ -17,7 +17,7 @@ Caso queira executar o projeto localmente :
 # Clone este repositório
 $ git clone <https://github.com/jordan-cod/Projeto-single-price-grid.git>
 ```
-* Acesse o diretório /Projeto-Strata e execute o Index.html com o navegador que preferir.
+* Acesse o diretório /Projeto-single-price-grid e execute o Index.html com o navegador que preferir.
 * É bom ter um editor para trabalhar com código como [VSCode](https://code.visualstudio.com/)
 
 ---
